@@ -1,0 +1,21 @@
+---
+name: Nathan-Loria-302-Website-Project
+break: true
+indent: 4
+---
+Nathan-Loria-302-Website-Project:
+--command "htmlhint index.html" --executes
+--command "htmlhint index.html" --count 1 --exact
+--command "htmlhint index.html" --fragment "no errors found" --count 1 --exact
+
+--command "htmlhint announcments.html" --executes
+--command "htmlhint announcments.html" --count 1 --exact
+--command "htmlhint announcments.html" --fragment "no errors found" --count 1 --exact
+
+--command "htmlhint photo_gallery.html" --executes
+--command "htmlhint photo_gallery.html" --count 1 --exact
+--command "htmlhint photo_gallery.html" --fragment "no errors found" --count 1 --exact
+
+--command "htmlhint about_us.html" --executes
+--command "htmlhint about_us.html" --count 1 --exact
+--command "htmlhint about_us.html" --fragment "no errors found" --count 1 --exact
