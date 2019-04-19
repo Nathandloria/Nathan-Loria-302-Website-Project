@@ -21,7 +21,7 @@ function Player(name, year) {
   document.write("<th>Year:</th>");
   for (var i = 0; i < Mensplayers.length; i++) {
     var p = Mensplayers[i];
-    document.write("<tr scope='row'>");
+    document.write("<tr>");
     document.write("<td>" + p.name + "</td>");
     document.write("<td>" + p.year + "</td>");
     document.write("</tr>");

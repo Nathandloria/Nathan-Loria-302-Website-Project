@@ -24,7 +24,7 @@ function Player(name, year) {
   document.write("<th>Year:</th>");
   for (var i = 0; i < Womensplayers.length; i++) {
     var wp = Womensplayers[i];
-    document.write("<tr scope='row'>");
+    document.write("<tr>");
     document.write("<td>" + wp.name + "</td>");
     document.write("<td>" + wp.year + "</td>");
     document.write("</tr>");
