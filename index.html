@@ -62,7 +62,8 @@
   <p style="color: #696969">The <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Hellbender">Hellbender</a> is the "mascot" for the Allegheny College ultimate frisbee team. A hellbender is a species of aquatic giant salamander that has large populations in French Creek which is the creek, spanning 117 miles, that runs through Meadville, PA which is the city in which Alleghey College is located. The team mascot may be different than the schools mascot, but the Allegheny College spirit is still evident in the passion and drive of each team member. The team chemistry is shown through communication on the field and close friendships off the field. Each member of the team participates and has an equally important role in the performance of the team. The team is full of amazing people. Don't pass up on the opportunity to join this amazing team!</p>
   <hr>
   <h1>Prospective Member Form:</h1>
-  <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input name="bot-field" type="hidden">
     <fieldset>
       <div class="form-group">
         <label>Name:</label>
@@ -87,8 +88,6 @@
         <label>Why would you like to join the team?</label>
         <textarea class="form-control" rows="3" placeholder="Enter your response" name="response" required></textarea>
       </div>
-      <div data-netlify-recaptcha="true"></div>
-      <br>
       <button type="submit" class="btn btn-primary">Submit</button>
     </fieldset>
   </form>
