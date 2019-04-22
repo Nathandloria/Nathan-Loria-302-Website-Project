@@ -11,10 +11,10 @@
 </head>
 <body>
   <style>
-  body h1, h2, h3, h4, h5, h6, p {
+  body h1, h2, h3, h4, h5, h6, p, form {
     padding-left: 5px;
   }
-  body p {
+  body p, form {
     color: #696969;
   }
   </style>
@@ -44,7 +44,7 @@
   <br>
 
   <h1>Allegheny College Ultimate</h1>
-  <h6>Who are we?</h6>
+  <h6>-Who are we?</h6>
   <hr>
   <p>The ultimate frisbee team at Allegheny College is an amazing organization comprised of a womens, men and mixed team. These teams practice together during the fall, winter and spring seasons and participate in tournaments throughout the year. In the spring season, the womens and mens team participate in <a target="_blank" rel="noreferrer" href="https://www.usaultimate.org/">USAU</a> sanctioned tournaments leading up to sectionals where both teams participate in games against other teams in the same section as Allegheny College. The team is an amzing way to build communication skills, meet and bond with amazing people, be part of a team and overall get involved in the amazing community that is ultimate frisbee.</p>
   <br>
@@ -60,6 +60,26 @@
   <img class="center" src="img/acu_hellbender.jpg" alt="hellbender logo">
   <br>
   <p style="color: #696969">The <a target="_blank" rel="noreferrer" href="https://en.wikipedia.org/wiki/Hellbender">Hellbender</a> is the "mascot" for the Allegheny College ultimate frisbee team. A hellbender is a species of aquatic giant salamander that has large populations in French Creek which is the creek, spanning 117 miles, that runs through Meadville, PA which is the city in which Alleghey College is located. The team mascot may be different than the schools mascot, but the Allegheny College spirit is still evident in the passion and drive of each team member. The team chemistry is shown through communication on the field and close friendships off the field. Each member of the team participates and has an equally important role in the performance of the team. The team is full of amazing people. Don't pass up on the opportunity to join this amazing team!</p>
+  <hr>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <fieldset>
+      <legend>Prospective Member Form:</legend>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email Address:</label>
+        <input type="email" class="form-control" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Student ID:</label>
+        <input type="ID" class="form-control" placeholder="Enter ID">
+      </div>
+      <div class="form-group">
+        <label for="textArea">Why would you like to join the team?</label>
+        <textarea class="form-control" rows="3" placeholder="Enter Response"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>
   <hr>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
