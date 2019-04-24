@@ -37,8 +37,8 @@ function Image(src, alt) {
   ];
   for (var i = 0; i < images.length; i++) {
     var pic = images[i];
-    document.write("<div class='gallery'>")
+    document.write("<div class='gallery'>");
     document.write("<img src='" + pic.src + "' alt='" + pic.alt + "'>");
-    document.write("</div>")
+    document.write("</div>");
   }
 })();
