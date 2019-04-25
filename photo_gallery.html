@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
   <link rel="icon" href="img/acu_hellbender.jpg">
-  <script src="jquery-3.3.1.min.js"></script>
   <title>Allegheny College Ultimate</title>
 </head>
 <body>
@@ -15,9 +14,13 @@
   body h1, h2, h3, h4, h5, h6 {
     padding-left: 5px;
   }
+  #hover:hover {
+    opacity: .6;
+    transform: scale(1.02);
+  }
   </style>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="https://acultimate.netlify.com/"><img src="img/acu.png" alt="AC Ultimate" width="150px">ltimate</a>
+    <a class="navbar-brand" href="https://acultimate.netlify.com/"><img id="hover" src="img/acu.png" alt="AC Ultimate" width="150px">ltimate</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,13 +46,6 @@
 
   <h1>Frisbee Pictures!</h1>
   <h6>-Creds to Lauren Aiello</h6>
-
-  <style>
-  body img:hover {
-    opacity: .6;
-    transform: scale(1.02);
-  }
-  </style>
 
   <div>
     <script type="text/javascript" language="javascript" src="js/PhotoGallery.js"></script>
