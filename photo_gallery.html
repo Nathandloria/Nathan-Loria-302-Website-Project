@@ -55,16 +55,16 @@
   <h6>-Have any images you want to share with the page?<h6>
   <hr>
 
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <form name="images" method="POST" data-netlify="true" netlify-honeypot="bot-field">
     <input name="bot-field" type="hidden">
     <fieldset>
       <div class="form-group">
         <label>Name:</label>
-        <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter name (for credit)" required>
+        <input type="text" class="form-control" placeholder="Enter name (for credit)" required>
       </div>
       <div class="form-group">
         <label>Choose an image:</label>
-        <input type="file" class="form-control-file" aria-describedby="fileHelp">
+        <input type="file" class="form-control-file" required>
         <small id="fileHelp" class="form-text text-muted">Share your awesome frisbee pictures!</small>
       </div>
       <button type="submit" class="btn btn-primary">Submit image</button>
