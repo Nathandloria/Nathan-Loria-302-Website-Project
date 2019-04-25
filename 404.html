@@ -9,12 +9,12 @@
   <link rel="icon" href="img/acu_hellbender.jpg">
   <title>Allegheny College Ultimate</title>
 </head>
-<body onload="startGame()">
+<body>
   <style>
-  body h1, h2, h3, h4, h5, h6, p, form, button {
+  body h1, h2, h3, h4, h5, h6, p {
     padding-left: 5px;
   }
-  body p, form {
+  body p {
     color: #696969;
     font-size: 12pt;
   }
@@ -31,7 +31,9 @@
   <h1>Error!</h1>
   <h6>-This page was not found!</h6>
   <hr>
-
+  <p>Would you like to play a game?</p>
+  <button onmousedown="startGame()" class="btn btn-primary" style="margin:5px;">Yes!</button>
+  <br>
   <script type="text/javascript" language="javascript" src="js/Game.js"></script>
-
-  <button onmousedown="accelerate(-0.2)" class="btn btn-primary" onmouseup="accelerate(0.05)">JUMP</button>
+</body>
+</html>

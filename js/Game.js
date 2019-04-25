@@ -3,6 +3,7 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
+  document.write("<button onmousedown='accelerate(-0.2)' class='btn btn-primary' onmouseup='accelerate(0.05)' style='margin:5px;'>JUMP</button>");
   myGamePiece = new component(30, 30, "red", 10, 120);
   myGamePiece.gravity = 0.05;
   myScore = new component("30px", "Consolas", "black", 280, 40, "text");
