@@ -37,8 +37,6 @@ function Image(src, alt) {
   ];
   for (var i = 0; i < images.length; i++) {
     var pic = images[i];
-    document.write("<div class='gallery'>");
-    document.write("<img src='" + pic.src + "' alt='" + pic.alt + "'>");
-    document.write("</div>");
+    document.write("<img id='thumbnailImage' id='sky' src='" + pic.src + "' alt='" + pic.alt + "' style='width:25%;float:left;padding:5px;border-radius:9px;'>");
   }
 })();
