@@ -40,7 +40,7 @@ function Image(src, alt) {
     document.write("<button type='button' class='gallery' data-toggle='modal' data-target='#myModal" + i + "'>");
     document.write("<img id='img' class='galleryimg' src='" + pic.src + "' alt='" + pic.alt + "'>");
     document.write("</button>");
-    document.write("<div id='myModal" + i + "' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>");
+    document.write("<div id='myModal" + i + "' class='modal fade' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>");
     document.write("<div class='modal-dialog'>");
     document.write("<div class='modal-content'>");
     document.write("<div class='modal-body'>");
