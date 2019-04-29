@@ -37,8 +37,17 @@ function Image(src, alt) {
   ];
   for (var i = 0; i < images.length; i++) {
     var pic = images[i];
-    document.write("<button class='gallery'>");
+    document.write("<button type='button' class='gallery' data-toggle='modal' data-target='#myModal" + i + "'>");
     document.write("<img id='img' class='galleryimg' src='" + pic.src + "' alt='" + pic.alt + "'>");
     document.write("</button>");
+    document.write("<div id='myModal" + i + "' class='modal fade' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>");
+    document.write("<div class='modal-dialog'>");
+    document.write("<div class='modal-content'>");
+    document.write("<div class='modal-body'>");
+    document.write("<img src='" + pic.src + "' class='img-responsive'>");
+    document.write("</div>");
+    document.write("</div>");
+    document.write("</div>");
+    document.write("</div>");
   }
 })();
